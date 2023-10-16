@@ -1,0 +1,48 @@
+/* Dark mode colors. */
+:root {
+    --color-primary: #6f39f8;
+    --color-text: #2e353f;
+    --color-text-light: #4f5969;
+    --color-heading: #1a202c;
+    --color-heading-black: black;
+    --color-accent: #d1dce5;
+    --sl-color-text-accent: var(--color-primary);
+    --color-primary-button: white;
+    --color-gray: #e0e0e0;
+    --sl-color-text-invert: white;
+    --sl-font: 'Satoshi-Variable', sans-serif;
+}
+
+/* Light mode colors. */
+:root[data-theme='light'] {
+    --sl-color-text-accent: var(--color-primary);
+    --color-hero-background: #fcfbff;
+}
+
+body * {
+    outline-color: var(--color-primary)!important;
+}
+
+[data-theme="dark"] body {
+    background: linear-gradient(180deg, #0C0B0B 0%, #2E1C5A 100%);
+}
+
+
+[data-theme="dark"]  header.header {
+    background: #2E1C5A;
+}
+    
+
+[data-theme="light"] header.header {
+   border-bottom: 1px dashed var(--color-gray);
+   background-color: white;
+}
+
+
+.action.primary {
+    color: var(--color-primary-button);
+}
+
+.center img {
+    margin:auto;
+}
