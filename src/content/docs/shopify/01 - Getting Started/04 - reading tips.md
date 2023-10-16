@@ -39,7 +39,7 @@ You will find them inside the doc in the following ways:
 
 
 
-* Static Attributes
+### Static Attributes
 
 <custom-attribute name="name" value="value"></custom-attribute> 
 
@@ -47,7 +47,7 @@ These attributes are static, so do not change them, just copy the left part insi
 
 
 
-* Dynamic Attributes
+### Dynamic Attributes
 
 <custom-attribute dynamic name="name" value="dynamic-value"></custom-attribute> 
 
