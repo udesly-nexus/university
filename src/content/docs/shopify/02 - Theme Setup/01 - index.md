@@ -2,6 +2,9 @@
 title: Pages
 sidebar:
   order: 1
+  badge:
+    text: Updated
+    variant: tip  
 slug: shopify/theme-setup
 ---
 
@@ -147,20 +150,30 @@ Webflow doesn't have this functionality, to create an activate account page you 
 
 ### Addresses
 Webflow doesn't have this functionality, to create an addesses account page you have to design a static page with the slug **addresses**. In this page your customer will be able to modify it's own addresses or add new one. So be sure to add the forms
-6. **addresses**: used to create the template showed at the url `/customers/addresses`;
+[New Address](/shopify/forms/account/#new-address) and [Edit Address](/shopify/forms/account/#edit-address)
 
 
-#### CMS Collections
+## Page Templates
 
-1. **blog-***: used to create an alternative blog template;
-2. **article-**: used to create an alternative article template;
+Below there are some **must** pages that you should **ALWAYS** create in Webflow.
+
+### Default Page
+
+This is the page that will be used as template for new pages created directly in Shopify. To create it you must create a static page in Webflow with slug `default`.
+
+Inside this page you should use all dynamic elements that you find [here](/shopify/general/static-pages-dynamic-elements/)
+
+### Special Page
+
+This page is used by Shopify for app proxies, for the challenge page, and for the policy pages. So it's basically mandatory.
+To create a special page, just create a static page in Webflow with slug `special-page`.
+It's mandatory in this page to create a simple template with basically just Header and Footer and a richtext in between.
+The richtext must have the attribute
+
+<custom-attribute name="special-page" value="content"></custom-attribute>
 
 
-
-#### Page Templates
-
-1. **page** or **default**: used to create a default page template, useful to create pages directly in Shopify;
-2. **special-page**: used for policy pages and some special third party apps;
+**Note:** the richtext must not be inside a *Component*
 
 
 

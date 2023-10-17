@@ -32,6 +32,10 @@
     --kbd-color-text: var(--color-text-primary);
 }
 
+[data-theme="dark"] main[data-pagefind-body] {
+    background: #0C0B0B;
+}
+
 body * {
     outline-color: var(--color-primary)!important;
 }
@@ -56,7 +60,7 @@ body * {
     color: var(--color-primary-button);
 }
 
-.center img {
+.center img, main p img {
     margin:auto;
 }
 
@@ -85,4 +89,13 @@ kbd {
   kbd:hover {
     box-shadow: 0 1px 0 0.5px var(--kbd-color-border);
     top: 1px;
+  }
+
+  main .gallery > *:not(img) {
+    display: contents;
+  }
+
+  main .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
