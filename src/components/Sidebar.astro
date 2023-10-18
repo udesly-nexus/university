@@ -405,4 +405,9 @@ class CopyElement extends HTMLElement {
 customElements.define("custom-attribute", CustomAttribute)
 
 customElements.define("copy-element", CopyElement)
+
+document.addEventListener('readystatechange', () => {
+  document.documentElement.classList.add(document.readyState)
+})
+
 </script>

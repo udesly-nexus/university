@@ -10,6 +10,8 @@ hero:
 import { CardGrid } from '@astrojs/starlight/components';
 import  Card  from '../../components/Card.astro';
 
+import Footer from '../../components/Footer.astro';
+
 ## Create a Webflow template for...
 
 <CardGrid stagger>
@@ -31,7 +33,9 @@ import  Card  from '../../components/Card.astro';
 '>
 		With the Udesly APP you can design your project in Webflow and use it as a Jamstack powered site, without writing a single line of code.
 	</Card>
-	<Card href="/ghost/getting-started" title="Ghost" icon='<img src="/icons/ghost-logo-orb.png" class="icon" />'>
+	<Card href="/ghost/getting-started" title="Ghost" icon='<img src="/icons/ghost-logo-orb.png" class="icon only-light" /><img src="/icons/ghost-logo-light.png" class="icon only-dark no-margin" />'>
 		Design meets functionality. Build in Webflow and manage a successful blog with Ghost. No code required.
 	</Card>
 </CardGrid>
+
+<Footer />

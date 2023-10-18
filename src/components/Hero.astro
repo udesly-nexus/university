@@ -2,7 +2,11 @@
 
 const { data } = Astro.props.entry;
 const { title = data.title, hero_title = title, tagline, image, actions = [] } = data.hero || {};
-
+import services from '../assets/webflow-services.svg';
+import wp from '../assets/wordpress.svg';
+import shopi from '../assets/shopify.svg';
+import jm from '../assets/jamstack.svg';
+import ghost from '../assets/ghost.png';
 ---
 
 <div class="hero">
@@ -14,15 +18,98 @@ const { title = data.title, hero_title = title, tagline, image, actions = [] } =
 			{tagline && <div class="tagline" set:html={tagline} />}
 		</div>
 	</div>
-    <div class="hero-links">
-        <a href="/shopify/getting-started"></a>
-        <a href="/wordpress/getting-started"></a>
-        <a href="/jamstack/getting-started"></a>
-        <a href="/ghost/getting-started"></a>
+    <div class="animation-container">
+       <img src={services.src} class="base-image"/>
+	   <div class="absolute">
+		 <img src={wp.src} class="wp"/>
+	   </div>
+	   <div class="absolute" style="--duration: 20s">
+		<img src={shopi.src} class="shopify"/>
+	  </div>
+	  <div class="absolute" style="--duration: 30s">
+		<img src={jm.src} class="jamstack"/>
+	  </div>
+	  <div class="absolute" style="--duration: 50s">
+		<img src={ghost.src} class="ghost"/>
+	  </div>
     </div>
 </div>
+<script>
+	document.addEventListener('readystatechange', () => {
+  document.documentElement.classList.add(document.readyState)
+})
 
+</script>
 <style>
+	.animation-container {
+		position: relative;
+	}
+	.absolute {
+		--duration: 50s;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		animation: rotateclockwise linear var(--duration) infinite;
+	}
+
+	.absolute img {
+		animation: rotatecounterclockwise linear var(--duration) infinite;
+	}
+
+	.shopify {
+		position: absolute;
+		width: 11%;
+		bottom: 28%;
+		right: 40%;
+		top: auto;
+	}
+
+	.jamstack {
+		position: absolute;
+		width: 11%;
+		bottom: 15%;
+		right: 40%;
+		top: auto;
+	}
+
+	.ghost {
+		position: absolute;
+		width: 11%;
+		bottom: 60%;
+		right: 85%;
+		top: auto;
+	}
+
+	.wp {
+		position: absolute;
+		width: 11%;
+		bottom: 15%;
+		right: 18%;
+		top: auto;
+		left: auto;
+	}
+
+	@keyframes rotateclockwise {
+		0% {
+			transform: rotateZ(0deg);
+		}
+		100% {
+			transform: rotateZ(360deg);
+		}
+	}
+
+	@keyframes rotatecounterclockwise {
+		0% {
+			transform: rotateZ(0deg);
+		}
+		100% {
+			transform: rotateZ(-360deg);
+		}
+	}
+
+
 	.hero {
 		display: grid;
 		align-items: center;
@@ -99,9 +186,9 @@ const { title = data.title, hero_title = title, tagline, image, actions = [] } =
 
 	@media (min-width: 50rem) {
 		.hero {
-			grid-template-columns: 7fr 4fr;
+			grid-template-columns: 6fr 4fr;
 			gap: 3%;
-			padding-block: clamp(2.5rem, calc(1rem + 10vmin), 10rem);
+			padding-block: 2.5rem;
 		}
 
 		.hero > img,
