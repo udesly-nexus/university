@@ -1,17 +1,19 @@
 ---
-title: Sections
+title: Editable Sections
 sidebar:
   order: 4
 slug: shopify/general/sections
 ---
 
-Sections are modular, customizable elements of a page, which can have specific functions. Sections can be statically included in a theme's templates (like the header and footer), or they can be dynamically added to the theme's homepage from the Theme Editor.
+Sections are modular, customizable elements of a page, which can have specific functions.
 
 A section can be created on a limited number of element tags: (Article, Header, Footer, Aside, Div and Section).
 
-Every **Symbol** you create in Webflow will be automatically transformed into a **snippet** or **section** if relevant options for the section are included in it.
+Every **Component** you create in Webflow will be automatically transformed into a **snippet** or a **section** if relevant options for the section are included in it.
 
-Inside sections, you can add several options that will create the dynamic parts of your section.
+Inside components, you can add several options that will create the dynamic parts of your section.
+
+Webflow Component properties are automatically converted as section options without the needing for attributes. Note also that Sections data is global and not modifiable page by page.
 
 > ⚠️⚠️⚠️: Only inside sections you can add options, don't add option on the section itself!
 
