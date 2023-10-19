@@ -115,6 +115,17 @@ To products you can assign as media a Video, you can add in Webflow a placeholde
 
 > This element requires custom CSS
 
+
+## Videos
+
+To products you can assign as media multiple Videos, you can add in Webflow a placeholder element that will be duplicated once for each video and where inside the video will be outputted, using the custom attribute:
+
+<custom-attribute name="product" value="videos"></custom-attribute>
+
+<copy-element name="Videos">ICU3QiUyMjB0eXBl4YCnJSQzQeKApjQwdyBlYmZsb3cgJTJGWHNjQHBEYXRh4oC+JDJD4YGLcGF5UGxvYWTlgY7jgZ5Abm9kZXPlgZ9ENULkgLRfaeaBgyAyMmZlNzMgYTQ0YS05IGQ3MS0zZCA2OC1mMGMgMy1lZTAxIGZiYjFhMywyMeeCgOuCq0JsKG9ja+iAu2FnMeeDhWRpdueCs2MwbGFzc+qCojUiROWAuWhpbGQocmVu74C6MmQj5YOz5oOjeGF0dEJy7YOjbmFt6IS1IHByb2R1YyJ054SndmFsdSHohZN2aWRlbynjhKM3ROeCnnRlInjjgZAzQWZhXGxz4YaA74Ok5IOk4YGTQemBlnN0eWzvg6wr4YeD4oSDdO+EhDIyXGl444Wc7oC14YeO6IeBIGludGVyYUBjdGlvbu+FhiAyMmV2ZW4n74G64oKS44GRTGlzR+2Cl+SDkOOIrW1l7IWnIHVubGluayBlZFN5bWIgb2xDb3VuJeWEojDlhpdyb3BQcGVkTOGBheWJkSHmgLl5bkJpbiBkUmVtb3ZcZWTvgZnigYDigqnvgYQh6oG9cGFnaW4+YeKEhe+Bp+GCoOOGhg==</copy-element>
+
+> This element requires custom CSS
+
 ## Model
 
 To products you can assign as media a 3D model, you can add in Webflow a placeholder element where the model will be outputted, using the custom attribute:

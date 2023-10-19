@@ -2,6 +2,9 @@
 title: Editable Sections
 sidebar:
   order: 4
+  badge:
+    text: Updated
+    variant: tip
 slug: shopify/general/sections
 ---
 
@@ -95,6 +98,13 @@ This option will create a color picker, use it to change the border color of any
 The Option name can be everything you want, but be sure to give it a significant name to help your customers. (It will be showed in Shopify Customize Area).
 
 > ⚠️⚠️⚠️: don't mix Color, Background and Border Color on the same element! Only one will be converted!
+
+## Menu
+This option will create a Menu picker, use it to connect a link to a 1 level menu (it will be duplicated once for each link in the menu choosen), adding the attribute:
+
+<custom-attribute dynamic name="option:menu" value="option name"></custom-attribute>
+
+The Option name can be everything you want, but be sure to give it a significant name to help your customers. (It will be showed in Shopify Customize Area).
 
 ## Blocks
 Blocks are a dynamic way to add multiple times a single element, and they can contain every option already listed before. So think about it as a way to add real dynamic features to some of your elements. For example, with blocks you can create a dynamic slider adding the block to 1 slide of the slider, in this way for each block that your customer create, a new slide will be generated. Note that like for sections, options can be added only inside blocks and not on the block itself. To create a block just add the attribute:

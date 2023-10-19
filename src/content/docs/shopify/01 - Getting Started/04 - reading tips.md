@@ -77,10 +77,3 @@ If you find issues during conversion or need help making some advanced stuff, we
 
 1. Read the FAQs, most of the time your issue can be found there;
 2. Contact us on the [help center](https://www.udesly.com/help-center), we will be happy to help you during business days! 💼
-
-
-
-
-
-
-

@@ -8,7 +8,7 @@ export default defineConfig({
 		starlight({
 			title: 'Udesly Nexus',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/udesly-nexus/university',
 			},
 			customCss: [
 				'./src/styles/custom.css',

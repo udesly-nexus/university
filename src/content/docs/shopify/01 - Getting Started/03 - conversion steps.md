@@ -17,12 +17,12 @@ Converting a site is very very simple, below you will find a guide divided into 
 Design your Shopify theme using eCommerce elements of Webflow. Note that only eCommerce themes can be converted into Shopify. If you are not aware of it, you don't need a site plan to design an eCommerce project, every Workspace plan will allow you to design and export eCommerce projects.
 Be sure to create all the relevant pages that you find explained [here](/shopify/theme-setup/).
 
-You can also start from our newly released [starter templates](https://udesly.com)
+You can also start from our newly released [starter template](https://webflow.com/made-in-webflow/website/shopify-starter-theme-ecoffee)
 
 ### Run the extension
 After you are done and ready to convert, open up our [Chrome Extension](https://chrome.google.com/webstore/detail/udesly-template-configura/khhgdnefpkphamogndglabaalbpfidbf) and click on Configure Attributes
 
-![conversion steps Webflow](/images/extension-shopify.png)
+![conversion steps Webflow](/images/wf-to-shopify-attributes.png)
 
 The extension will automatically download a configuration file
 
