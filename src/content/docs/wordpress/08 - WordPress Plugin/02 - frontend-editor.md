@@ -24,7 +24,7 @@ E.G. an H1 with content "my title" gets hashed to a code like text_12123123, so 
 
 Because the hashing is always the same, if you have two duplicates elements in the same page (2 lorem ipsum, for example), these elements cannot be edited separately. To overcome this problem you can use the following attribute:
 
-<custom-attribute dynamic name="key" value="unique key"></custom-attribute>
+<custom-attribute dynamic name="duplicate-key" value="unique key"></custom-attribute>
 
 The unique key is totally up to you, just be sure that this is unique per page.
 
